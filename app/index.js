@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {Badge} from './components/badge';
 import {Users} from './components/users';
+import {Popular} from './components/popular';
 
 import * as styles from './index.css';
 
@@ -14,7 +15,7 @@ import * as styles from './index.css';
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className='container'>
                 Hello and welcome to the React world!!!
                 <Badge
                     name='Hafeez Syed'
@@ -31,6 +32,11 @@ class App extends React.Component {
                     { name: 'Mikenzi', friend: false },
                     { name: 'Jessica', friend: true },
                     { name: 'Dan', friend: false } ]}
+                />
+
+                <hr />
+
+                <Popular
                 />
             </div>
         )
