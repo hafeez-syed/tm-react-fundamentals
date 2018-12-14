@@ -65,10 +65,10 @@ export class Popular extends React.Component {
             selectedLanguage: 'All'
         };
 
-        this.updateLanguage = this.updateLanguage.bind(this);
+        //this.updateLanguage = this.updateLanguage.bind(this);
     }
 
-    updateLanguage(language) {
+    updateLanguage = (language) => {
         this.setState(() => {
            return {
                selectedLanguage: language,
@@ -84,7 +84,7 @@ export class Popular extends React.Component {
                     }
                 });
             })
-    }
+    };
 
     componentDidMount() {
         this.updateLanguage(this.state.selectedLanguage);
