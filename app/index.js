@@ -23,7 +23,7 @@ class App extends React.Component {
             { name: 'Michael', friend: false },
             { name: 'Mikenzi', friend: false },
             { name: 'Jessica', friend: true },
-            { name: 'Dan', friend: false } ];
+            { name: 'Dan', friend: false } ];   
 
         return (
 
